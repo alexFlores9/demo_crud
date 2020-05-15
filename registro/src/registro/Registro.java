@@ -60,7 +60,7 @@ public class Registro {
             autos.put(contador, autosAdd.toString());
             contador++;
         }
-        while(contador <= 5);
+        while(contador <= 3); //se puede cambiar para modificar la cantidad de registros
     }
         
     }
