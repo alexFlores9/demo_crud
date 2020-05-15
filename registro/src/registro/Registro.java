@@ -4,7 +4,12 @@
  * and open the template in the editor.
  */
 package registro;
-
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Scanner;
+import java.util.logging.Logger;
 /**
  *
  * @author alex
