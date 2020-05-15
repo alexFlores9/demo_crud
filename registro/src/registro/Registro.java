@@ -47,6 +47,7 @@ public class Registro {
           }
           private static void addAuto(){
         int contador = 1;// servira para guardar los 3 registros
+                System.out.println("Autos a registrar");
         do{
             System.out.println("Escriba el marca del auto #" + contador);
             String nombre = escribir.nextLine();
