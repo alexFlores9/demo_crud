@@ -38,6 +38,14 @@ public class Registro {
         public String toString() {
             return  "Marca: "+marca + " Modelo: " + modelo + " Año: "+ anio; 
         }
+        //Creo el Hashtable
+        static Hashtable<Integer,String>autos = new Hashtable<>();
+        static Scanner escribir = new Scanner (System.in); //Declaracion de manera global
+        
+          public static void main(String[] args) {
+              addAuto();
+              Mostrar();
+          }
         
         
     }
