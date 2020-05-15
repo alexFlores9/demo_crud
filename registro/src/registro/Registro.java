@@ -12,7 +12,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 /**
  *
- * @author alex
+ * @author alex,oscar,marina,ruben
  */
 public class Registro {
 
