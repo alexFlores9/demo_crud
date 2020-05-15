@@ -46,7 +46,22 @@ public class Registro {
               addAuto();
               Mostrar();
           }
-        
+          private static void addAuto(){
+        int contador = 1;// servira para guardar los 5 registros
+        do{
+            System.out.println("Escriba el marca del auto #" + contador);
+            String nombre = escribir.nextLine();
+            System.out.println("Escriba el modelo del auto #"+ contador);
+            String modelo = escribir.nextLine();
+            System.out.println("Escriba el Año del auto #"+ contador);
+            String anio = escribir.nextLine();            
+            // Añadimos el auto 
+            Auto autosAdd = new Auto(nombre, modelo, anio);
+            autos.put(contador, autosAdd.toString());
+            contador++;
+        }
+        while(contador <= 5);
+    }
         
     }
     
