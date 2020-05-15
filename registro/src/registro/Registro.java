@@ -19,8 +19,27 @@ public class Registro {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+      static class Auto{
+            // Declaro variables de tipo private
+        private String marca, modelo, anio;
+            // Este es mi contructor de la clase 
+        // aqui voy a pasar unos parametros los cuales van a llenar nuestro 
+        // hastable lo are de partes de un auto. el contructor tiene 
+        // el mismo nombre que la clase principal en este caso es Hashtable_Ejemplo
+        public Auto(String m, String mod, String an) {
+            marca = m;
+            modelo = mod;
+            anio = an;
+        }  
+           // HAY UNA FORMA PARA SABER QUE LOS VALORES NO SE REPITAN 
+        
+        // Aqui agrrego las variables al hashtable
+        @Override
+        public String toString() {
+            return  "Marca: "+marca + " Modelo: " + modelo + " Año: "+ anio; 
+        }
+        
+        
     }
     
 }
