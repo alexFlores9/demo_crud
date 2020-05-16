@@ -64,7 +64,18 @@ public class demo_crud {
         
         while(contador <= 3); //se puede cambiar el valor del contador para modificar la cantidad de registros
     }
-        
+         // metodo para mostrar
+    private static void Mostrar(){
+    	// Para saber cuantos datos tiene el Hashtabe
+	Iterator<Map.Entry<Integer, String>> iterator = autos.entrySet().iterator();
+            // Ya teniendo el valor de datos del hashtable entonces recorremos 
+            // con while
+	while (iterator.hasNext()) {
+            // Por medio de Map vamos a descomponer el iterador del hastable
+		Map.Entry<Integer, String> entry = iterator.next();
+                // obteniendo eso solo llamado la llave y el valor que contenga el hashtable
+		System.out.println("ID= " + entry.getKey() + ", Datos = " + entry.getValue().toString());
+	}
     }
     
 }
