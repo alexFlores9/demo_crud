@@ -72,6 +72,7 @@ public class demo_crud {
             // con while
 	while (iterator.hasNext()) {
             // Por medio de Map vamos a descomponer el iterador del hastable
+            //......
 		Map.Entry<Integer, String> entry = iterator.next();
                 // obteniendo eso solo llamado la llave y el valor que contenga el hashtable
 		System.out.println("ID= " + entry.getKey() + ", Datos = " + entry.getValue().toString());
